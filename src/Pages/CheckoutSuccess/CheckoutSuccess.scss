@@ -1,0 +1,18 @@
+.checkout-success-img{
+    width:100vw;
+    height:500px;
+}
+.checkout-success-img img{
+    width:100%;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+    object-fit:cover;
+}
+.checkout-success-txt p{
+    margin-top:2%;
+    font-size:24px;
+    font-family:'Stencil Std';
+    text-align:center;
+    text-transform:uppercase;
+}
