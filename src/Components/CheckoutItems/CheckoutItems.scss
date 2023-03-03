@@ -68,3 +68,17 @@
     text-transform:uppercase;
 
 }
+@media screen and (max-width:500px){
+    .checkout-items-wrapper{
+        display:flex;
+        flex-direction:column;
+        grid-row-gap:30px;
+        grid-column-gap:30px;
+    }
+    .checkout-btn-wrapper{
+        display:flex;
+        justify-content: center;
+        margin-top:30px;
+    }
+
+}

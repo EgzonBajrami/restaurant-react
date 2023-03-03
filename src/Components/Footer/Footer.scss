@@ -73,7 +73,10 @@
         display:flex;
         border-top:0.1rem solid gray;
         margin-top:5%;
-        background-color:#fff;
+        background-color: rgb(181, 13, 13);
+        height:73vh;
+        overflow-y:hidden;
+        
      
        
         flex-direction:column;
@@ -116,7 +119,7 @@
         align-items:center;
          font-weight:500;
         font-family: 'Brush Script MT', cursive;
-        color:rgb(229,0,39);
+        color:#fff;
         font-size:26px;
     
        
@@ -137,4 +140,31 @@
         font-size:14px;
         
     }
+}
+@media screen and (min-width:501px) and (max-width:950px){
+    .artist-cilesi{
+        display:grid;
+        grid-template: auto / 48% 48%;
+        width:350px;
+        justify-content: center;
+        align-items:center;
+         font-weight:500;
+        font-family: 'Brush Script MT', cursive;
+        color:#fff;
+        font-size:26px;
+    
+       
+    }
+    .contact-conad{
+        display:flex;
+        flex-direction:column;
+      
+        margin-top:1%;
+        color:#fff;
+        margin-left:0%;
+        width:200px
+    }
+
+    
+
 }

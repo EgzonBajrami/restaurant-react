@@ -5,6 +5,7 @@ import TypeText from "../../Components/TypeText/TypeText";
 import {useEffect} from 'react';
 import ScrollReveal from "scrollreveal";
 import Footer from "../../Components/Footer/Footer";
+import './HomePage.scss'
 
 
 const HomePage = () =>{

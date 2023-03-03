@@ -34,6 +34,7 @@ function MenuModal(props) {
     <Modal
       {...props}
       size="lg"
+      className="fix-modal"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
@@ -50,9 +51,12 @@ function MenuModal(props) {
       </Modal.Header>
       <Modal.Body>
     
+
+       
         <div className="image-container-modal">
             <img src={process.env.REACT_APP_API_URL + props.data.image[0]} alt="pizza" />
         </div>
+        <div className="modal-scroll-add">
         <div className="modal-description">
         <p>
          {props.data.description}
@@ -69,6 +73,7 @@ function MenuModal(props) {
     
             <div className={btnClass}>
             <button disabled={added} onClick={addToCart}>Add to cart!</button>
+        </div>
         </div>
      
         

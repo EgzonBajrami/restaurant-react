@@ -65,6 +65,9 @@ const TopPizzas = () =>{
                 <div className="pizza-items-title">
                     <p>{elem.name}</p>
                 </div>
+                <div className="pizza-icon-mobile">
+                <img src={elem.image} alt="pizza" />
+            </div>
                 <div className="about-pizza">
                     <p>{elem.about}</p>
                 </div>

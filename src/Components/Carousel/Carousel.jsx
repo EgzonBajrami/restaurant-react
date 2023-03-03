@@ -11,7 +11,8 @@ const SliderCarousel =() =>{
     <Carousel
     autoPlay={true}
     interval={4500}
-    indicators={false}>
+    indicators={false}
+    className="carousel-wrapper">
       <Carousel.Item>
         <div className="carousel-icon-wrapper">
 
