@@ -8,13 +8,12 @@ import {add} from '../../Lib/store/slices/cart'
 function MenuModal(props) {
     const [toppingsSubmit, setToppingsSubmit] = useState([]);
     const dispatcher = useDispatch();
-    console.log(toppingsSubmit);
-    console.log(props.data);
+
     const [btnClass, setBtnClass] = useState('checkout-btn')
     const [added, setAdded] = useState(false);
     let total = props.data.price + (toppingsSubmit.length*0.5);
     const addToppings = async(data) =>{
-        console.log(data);
+      
         setToppingsSubmit(data);
         console.log(toppingsSubmit);
     }

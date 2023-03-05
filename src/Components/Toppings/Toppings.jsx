@@ -18,9 +18,21 @@ const Toppings = ({data, addToppings}) =>{
                    label={elem}
                    onChange={(e) => {
                     const tempToppings = [...toppings]
-                    tempToppings[index] = e.target.value;
-                    setToppings(tempToppings);
+                 
+                    if(tempToppings.includes(e.target.value)){
+                      console.log(tempToppings.indexOf(e.target.value));
+                      const currentIndex = tempToppings.indexOf(e.target.value);
+                      tempToppings.splice(currentIndex,1);
+                      console.log(tempToppings);
+                      setToppings(tempToppings);
                     addToppings(tempToppings);
+                      
+                    }else{
+                      tempToppings[index] = e.target.value;
+                      setToppings(tempToppings);
+                      addToppings(tempToppings);
+                    }
+                   
                   }}
                  />
        
